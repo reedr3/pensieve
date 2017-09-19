@@ -1,6 +1,3 @@
 <h1>Board index page!</h1>
-<% @boards.each do |board| %>
-  <%= board.name %>
-<% end %>
 
-<%= react_component 'Header', {categories: @categories, category: @category} %>
+<%= react_component 'Boards', {boards: @boards} %>

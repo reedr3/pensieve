@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Board.create(name: 'Board 1')
-Board.create(name: 'Board 2')
-Board.create(name: 'Board 3')
+Board.create(name: 'Board 1', color: "blue")
+Board.create(name: 'Board 2', color: "red")
+Board.create(name: 'Board 3', color: "yellow")
 
 List.create(name: 'List 1', board_id: 1)
 List.create(name: 'List 2', board_id: 1)
