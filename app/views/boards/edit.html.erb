@@ -1,0 +1,9 @@
+<%= form_tag board_path(@board), method: "put" do %>
+  <label>Board name:</label><br>
+  <%= text_field_tag :name, @board.name %><br>
+
+  <label>Board Color</label><br>
+  <%= text_area_tag :color, @board.color %><br>
+
+  <%= submit_tag "Update Board" %>
+<% end %>
