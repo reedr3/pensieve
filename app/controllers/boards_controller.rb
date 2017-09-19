@@ -30,6 +30,9 @@ class BoardsController < ApplicationController
   def edit
     @user = current_user
     @board = Board.find(params[:id])
+    if @board.user_id != @user.id
+      redirect_to boards_path
+    end
   end
 
   def update
