@@ -5,5 +5,7 @@
   <label>Board Color</label><br>
   <%= text_area_tag :color, @board.color %><br>
 
+  <%= hidden_field_tag :user_id, @user.id %><br>
+
   <%= submit_tag "Update Board" %>
 <% end %>

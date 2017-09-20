@@ -7,6 +7,7 @@
 		<%= f.label :color %><br>
 		<%= f.text_field :color %>
 	</p>
+		<%= f.hidden_field :user_id, :value => @user.id %>
 	<p>
 		<%= f.submit %><br>
 	</p>
