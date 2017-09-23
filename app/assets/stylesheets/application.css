@@ -15,13 +15,14 @@
  */
 
 
+
 html { background: #0d83d8; }
 body {
   margin: 0px;
   font-family: 'Lato', sans-serif;
 }
 
-/* General wrapper for each component's contents */
+/* General wrapper for each container component's contents */
 .container {
   position: relative;
   margin: 0 auto;
@@ -29,6 +30,9 @@ body {
   max-width: 1100px;
 }
 
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------*/
 /* Login and Register Header Component Styling */
  #login-register-header {
@@ -56,8 +60,8 @@ body {
    margin-left: 300px;
  }
 
-
- /* Content Component Styling */
+ /*---------------------------------------------------------------------------------------------------------------*/
+ /* Login and Register Content Component Styling */
  #login-register-content {
    position: relative;
    width: 100%;
@@ -66,15 +70,47 @@ body {
 
 
 
+ /*---------------------------------------------------------------------------------------------------------------*/
+ /*---------------------------------------------------------------------------------------------------------------*/
+ /* Main Header Component Styling */
+  #main-header {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    line-height: 60px;
+    background: #222;
+    color: #0d83d8;
+    border: 1px solid red;
+  }
+  #main-header img {
+    position: absolute;
+    left: 0;
+    width: 14%;
+    height: 90px;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+  #main-header img:hover {
+    opacity: 0.7;
+  }
+  #main-header a {
+    margin-left: 300px;
+  }
+
+  /*---------------------------------------------------------------------------------------------------------------*/
+  /* Main Content Component Styling */
+  #main-content {
+    position: relative;
+    width: 100%;
+    padding-top: 120px;
+  }
 
 
 
-
-
-
-/*--------------------------------------------------------------------------------------------------------------*/
-
-
+/*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+/* Boards Index Styling */
 .board-in-index-view {
   background-color: #666;
   color: white;
@@ -91,6 +127,8 @@ body {
 
 
 /*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+/* Devise Styling */
 .devise {
   text-align: center;
   font-size: 1.5em;

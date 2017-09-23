@@ -1,3 +1,2 @@
-<h1>Board index page!</h1>
-
-<%= react_component 'Boards', {boards: @boards, user_id: @user.id} %>
+<%= react_component 'MainHeader', {user: @user, authenticity_token: form_authenticity_token} %>
+<%= react_component 'MainContent', {user: @user, page: "index", boards: @boards} %>
