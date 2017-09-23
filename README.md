@@ -1,24 +1,39 @@
-# README
+# Pensieve
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Description of app.]
 
-Things you may want to cover:
+## The Stack
+- Ruby on Rails
+- Javascript
+- React
+- HTML
+- CSS
+- PostgreSQL
 
-* Ruby version
+Link to live app: http://pensieve.herokuapp.com
 
-* System dependencies
+## How To Use Pensieve
+### Getting Started
+Follow the above link to the app on heroku. Make an account.
 
-* Configuration
+### Boards
+You can view your boards and make new ones on your boards page.
+[img of example boards page]
 
-* Database creation
+You can view individual board details by clicking on them.
+[img of example board]
 
-* Database initialization
+### Lists
+You can add and manage lists on each of your boards.
+[img of list creation]
 
-* How to run the test suite
+### Cards
+You can add cards to each list on your board.
+[img of cards on board]
 
-* Services (job queues, cache servers, search engines, etc.)
+Cards can also be tagged with due dates, difficulty level, and more!
+[img of card creation with options]
 
-* Deployment instructions
-
-* ...
+### Search
+You can search your cards by keyword, tags, difficulty level, or due date.
+[image of search page with example results]
