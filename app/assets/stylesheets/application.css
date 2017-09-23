@@ -30,6 +30,21 @@ body {
   max-width: 1100px;
 }
 
+/* General button styling */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 
 /*---------------------------------------------------------------------------------------------------------------*/
@@ -43,7 +58,6 @@ body {
    line-height: 60px;
    background: #222;
    color: #0d83d8;
-   border: 1px solid red;
  }
  #login-register-header img {
    position: absolute;
@@ -56,9 +70,15 @@ body {
  #login-register-header img:hover {
    opacity: 0.7;
  }
- #login-register-header a {
-   margin-left: 300px;
+ #login-register-buttons {
+   float: right;
+   width: 25%;
+   margin-top: 10px;
  }
+ .login-register-button {
+   margin-left: 3%;
+ }
+
 
  /*---------------------------------------------------------------------------------------------------------------*/
  /* Login and Register Content Component Styling */
@@ -81,7 +101,6 @@ body {
     line-height: 60px;
     background: #222;
     color: #0d83d8;
-    border: 1px solid red;
   }
   #main-header img {
     position: absolute;
@@ -94,8 +113,14 @@ body {
   #main-header img:hover {
     opacity: 0.7;
   }
-  #main-header a {
-    margin-left: 300px;
+  #main-header p, #main-header a, #main-header form {
+    display: inline-block;
+  }
+  #main-header p {
+    margin-left: 600px;
+  }
+  #main-header a, #main-header form {
+    margin-left: 20px;
   }
 
   /*---------------------------------------------------------------------------------------------------------------*/
