@@ -15,13 +15,14 @@
  */
 
 
+
 html { background: #0d83d8; }
 body {
   margin: 0px;
   font-family: 'Lato', sans-serif;
 }
 
-/* General wrapper for each component's contents */
+/* General wrapper for each container component's contents */
 .container {
   position: relative;
   margin: 0 auto;
@@ -29,6 +30,25 @@ body {
   max-width: 1100px;
 }
 
+/* General button styling */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    cursor: pointer;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------*/
 /* Login and Register Header Component Styling */
  #login-register-header {
@@ -39,7 +59,6 @@ body {
    line-height: 60px;
    background: #222;
    color: #0d83d8;
-   border: 1px solid red;
  }
  #login-register-header img {
    position: absolute;
@@ -52,12 +71,18 @@ body {
  #login-register-header img:hover {
    opacity: 0.7;
  }
- #login-register-header a {
-   margin-left: 300px;
+ #login-register-header-buttons {
+   float: right;
+   width: 25%;
+   margin-top: 10px;
+ }
+ .login-register-button {
+   margin-left: 3%;
  }
 
 
- /* Content Component Styling */
+ /*---------------------------------------------------------------------------------------------------------------*/
+ /* Login and Register Content Component Styling */
  #login-register-content {
    position: relative;
    width: 100%;
@@ -66,15 +91,62 @@ body {
 
 
 
+ /*---------------------------------------------------------------------------------------------------------------*/
+ /*---------------------------------------------------------------------------------------------------------------*/
+ /* Main Header Component Styling */
+  #main-header {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    line-height: 60px;
+    background: #222;
+    color: #0d83d8;
+  }
+  #main-header img {
+    position: absolute;
+    left: 0;
+    width: 14%;
+    height: 90px;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+  #main-header img:hover {
+    opacity: 0.7;
+  }
+  #main-header p, #main-header a, #main-header form {
+    display: inline-block;
+  }
+  #main-header p {
+    margin-left: 600px;
+  }
+  #main-header-buttons {
+    float: right;
+    width: 25%;
+    margin-top: 10px;
+  }
+  .main-header-button {
+    margin-left: 10%;
+    padding: 5px 10px;
+  }
+  #main-header form input {
+    padding: 15px 10px;
+    cursor: pointer;
+  }
+
+  /*---------------------------------------------------------------------------------------------------------------*/
+  /* Main Content Component Styling */
+  #main-content {
+    position: relative;
+    width: 100%;
+    padding-top: 120px;
+  }
 
 
 
-
-
-
-/*--------------------------------------------------------------------------------------------------------------*/
-
-
+/*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+/* Boards Index Styling */
 .board-in-index-view {
   background-color: #666;
   color: white;
@@ -91,8 +163,16 @@ body {
 
 
 /*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+/* Devise Styling */
 .devise {
   text-align: center;
   font-size: 1.5em;
   margin-top: 100px;
+}
+.devise-button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  padding: 10px 10px;
 }

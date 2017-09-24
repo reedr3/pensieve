@@ -3,6 +3,7 @@ var Board = React.createClass({
   render: function() {
     return (
       <div>
+        <a href="/boards">All Boards</a>
         <h1>{this.props.board.name}</h1>
         <p>{this.props.board.color}</p>
         <a href={"/boards/" + this.props.board.id + "/edit"}>Edit Board</a>
