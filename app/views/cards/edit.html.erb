@@ -1,0 +1,12 @@
+<%= form_for [@board, @card] do |f| %>
+<%= f.hidden_field "_method", :value => "put" %>
+  <p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name, :value => @card.name %>
+	</p>
+  <%= f.hidden_field :list_id, :value => @card.list_id %>
+	<%= f.hidden_field :board_id, :value => @board.id %>
+	<p>
+		<%= f.submit %><br>
+	</p>
+<% end %>
