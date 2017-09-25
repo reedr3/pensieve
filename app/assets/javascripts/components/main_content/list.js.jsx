@@ -1,4 +1,14 @@
 var List = React.createClass({
+  isInList: function(card) {
+    return card.list_id == this.props.listId;
+  },
+
+  cardsInThisList: function() {
+    var totalBoardCards = this.props.cards;
+    var cardsInThisList = totalBoardCards.filter(this.isInList);
+    return cardsInThisList;
+  },
+
   render: function() {
     return (
       <div className="list">
@@ -11,11 +21,11 @@ var List = React.createClass({
           <input type="submit" value="Delete List" />
         </form>
 
-        {this.props.cards.map(function(card) {
-          return <Card board={this.props.board} card={card} authenticityToken={this.props.authenticityToken}/>
+        {this.cardsInThisList().map(function(card) {
+          return <Card board={this.props.board} listId={this.props.listId} card={card} authenticityToken={this.props.authenticityToken}/>
         }.bind(this))}
 
-        <div className="card"> <a href={"/boards/" + this.props.board.id + "/cards/new"}> <p> Create new card </p> </a> </div>
+        <div className="card"> <a href={"/boards/" + this.props.board.id + "/lists/" + this.props.listId + "/cards/new"}> <p> Create new card </p> </a> </div>
 
       </div>
     );

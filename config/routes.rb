@@ -2,11 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :boards do
-    resources :lists
-  end
-
-  resources :boards do
-    resources :cards
+    resources :lists do
+      resources :cards
+    end
   end
 
   root "boards#index"
