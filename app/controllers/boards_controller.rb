@@ -8,6 +8,7 @@ class BoardsController < ApplicationController
     @user = current_user
     @board = Board.find(params[:id])
     @lists = List.where(board_id: @board.id)
+    @cards = Card.where(board_id: @board.id)
     if @board.user_id != @user.id
       redirect_to boards_path
     end

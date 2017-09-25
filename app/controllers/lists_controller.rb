@@ -12,7 +12,7 @@ class ListsController < ApplicationController
     if @list.save
       redirect_to board_path(@board)
     else
-      redirect_to board_path(@board)
+      redirect_to boards_path
     end
   end
 
