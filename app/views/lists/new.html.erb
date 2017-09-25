@@ -1,0 +1,10 @@
+<%= form_for [@board, @list] do |f| %>
+	<p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+	</p>
+		<%= f.hidden_field :board_id, :value => @board.id %>
+	<p>
+		<%= f.submit %><br>
+	</p>
+<% end %>

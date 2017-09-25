@@ -3,6 +3,7 @@ class CreateCards < ActiveRecord::Migration[5.1]
     create_table :cards do |t|
       t.string :name
       t.integer :list_id
+      t.integer :board_id
 
       t.timestamps
     end
