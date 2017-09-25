@@ -15,7 +15,7 @@ var Board = React.createClass({
 
 
         {this.props.lists.map(function(list) {
-          return <List board={this.props.board} listName={list.name} listId={list.id} authenticityToken={this.props.authenticityToken}/>
+          return <List board={this.props.board} listName={list.name} listId={list.id} cards={this.props.cards} authenticityToken={this.props.authenticityToken}/>
         }.bind(this))}
 
         <div className="list"> <a href={"/boards/" + this.props.board.id + "/lists/new"}> <p> Create new list </p> </a> </div>

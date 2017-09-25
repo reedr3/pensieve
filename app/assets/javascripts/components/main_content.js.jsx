@@ -13,7 +13,7 @@ var MainContent = React.createClass({
       return (
         <main id="main-content">
           <div className="container">
-            <Board board={this.props.board} user={this.props.user} lists={this.props.lists} authenticityToken={this.props.authenticity_token}/>
+            <Board board={this.props.board} user={this.props.user} lists={this.props.lists} cards={this.props.cards} authenticityToken={this.props.authenticity_token}/>
           </div>
         </main>
       );

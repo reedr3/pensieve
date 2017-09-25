@@ -10,6 +10,13 @@ var List = React.createClass({
           <input name="authenticity_token" type="hidden" value={this.props.authenticityToken} />
           <input type="submit" value="Delete List" />
         </form>
+
+        {this.props.cards.map(function(card) {
+          return <Card board={this.props.board} card={card} authenticityToken={this.props.authenticityToken}/>
+        }.bind(this))}
+
+        <div className="card"> <a href={"/boards/" + this.props.board.id + "/cards/new"}> <p> Create new card </p> </a> </div>
+
       </div>
     );
   }
