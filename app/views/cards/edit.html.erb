@@ -4,6 +4,30 @@
 		<%= f.label :name %><br>
 		<%= f.text_field :name, :value => @card.name %>
 	</p>
+
+  <% if @card.difficulty == "easy" %>
+    <%= f.radio_button :difficulty, 'easy', :checked => true %>
+    <%= label :difficulty_easy, 'Easy' %>
+    <%= f.radio_button :difficulty, 'medium' %>
+    <%= label :difficulty_medium, 'Medium' %>
+    <%= f.radio_button :difficulty, 'hard' %>
+    <%= label :difficulty_hard, 'Hard' %>
+  <% elsif @card.difficulty == "medium" %>
+    <%= f.radio_button :difficulty, 'easy' %>
+    <%= label :difficulty_easy, 'Easy' %>
+    <%= f.radio_button :difficulty, 'medium', :checked => true %>
+    <%= label :difficulty_medium, 'Medium' %>
+    <%= f.radio_button :difficulty, 'hard' %>
+    <%= label :difficulty_hard, 'Hard' %>
+  <% else %>
+    <%= f.radio_button :difficulty, 'easy' %>
+    <%= label :difficulty_easy, 'Easy' %>
+    <%= f.radio_button :difficulty, 'medium' %>
+    <%= label :difficulty_medium, 'Medium' %>
+    <%= f.radio_button :difficulty, 'hard', :checked => true %>
+    <%= label :difficulty_hard, 'Hard' %>
+  <% end %>
+
   <%= f.hidden_field :list_id, :value => @list.id %>
 	<%= f.hidden_field :board_id, :value => @board.id %>
 	<p>

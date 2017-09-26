@@ -4,9 +4,9 @@ var Boards = React.createClass({
     return (
       <div id="boards">
         {this.props.boards.map(function(board) {
-          return <div className="board-in-index-view"> <a href={"/boards/" + board.id}> <p> {board.name} </p> </a> </div>
+          return <a href={"/boards/" + board.id}> <div className="board-in-index-view"> <p> {board.name} </p> </div> </a>
         }.bind(this))}
-        <div className="board-in-index-view"> <a href="/boards/new"> <p> Create new board </p> </a> </div>
+        <a href="/boards/new"> <div className="board-in-index-view"> <p> Create new board </p> </div> </a>
       </div>
     );
   }

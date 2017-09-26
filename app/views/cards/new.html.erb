@@ -3,6 +3,14 @@
 		<%= f.label :name %><br>
 		<%= f.text_field :name %>
 	</p>
+
+	<%= f.radio_button :difficulty, 'easy', :checked => true %>
+  <%= label :difficulty_easy, 'Easy' %>
+	<%= f.radio_button :difficulty, 'medium' %>
+	<%= label :difficulty_medium, 'Medium' %>
+	<%= f.radio_button :difficulty, 'hard' %>
+	<%= label :difficulty_hard, 'Hard' %>
+
 	<%= f.hidden_field :list_id, :value => @list.id %>
 	<%= f.hidden_field :board_id, :value => @board.id %>
 	<p>
