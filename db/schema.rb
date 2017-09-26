@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20170919212215) do
 
   create_table "cards", force: :cascade do |t|
     t.string "name"
+    t.string "difficulty"
     t.integer "list_id"
     t.integer "board_id"
     t.datetime "created_at", null: false

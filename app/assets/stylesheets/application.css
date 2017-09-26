@@ -27,7 +27,7 @@ body {
   position: relative;
   margin: 0 auto;
   width: 94%;
-  max-width: 1100px;
+  max-width: 1300px;
 }
 
 /* General button styling */
@@ -106,9 +106,8 @@ body {
   #main-header img {
     position: absolute;
     left: 0;
-    width: 14%;
+    width: 98%;
     height: 90px;
-    margin-top: 5px;
     border-radius: 10px;
   }
   #main-header img:hover {
@@ -133,6 +132,13 @@ body {
     padding: 15px 10px;
     cursor: pointer;
   }
+  #logo {
+    position: absolute;
+    left: 0;
+    width: 14%;
+    height: 90px;
+    margin-top: 5px;
+  }
 
   /*---------------------------------------------------------------------------------------------------------------*/
   /* Main Content Component Styling */
@@ -150,15 +156,23 @@ body {
 .board-in-index-view {
   background-color: #666;
   color: white;
-  width: 30%;
-  height: 250px;
+  width: 25%;
+  height: 150px;
   display: inline-block;
   margin: 1%;
+  border-radius: 10px;
 }
 .board-in-index-view p {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   margin: 10px 0 0 10px;
+}
+.board-in-index-view a:link, .board-in-index-view a:visited, .board-in-index-view a:hover, .board-in-index-view a:active {
+  color: white;
+  text-decoration: none;
+}
+.board-in-index-view:hover {
+  opacity: 0.9;
 }
 
 

@@ -33,7 +33,7 @@ class CardsController < ApplicationController
     @board = Board.find(params[:board_id])
     @list = List.find(params[:list_id])
     @card = Card.find(params[:id])
-    if @card.update(name: params[:card][:name], list_id: params[:list_id], board_id: params[:board_id])
+    if @card.update(name: params[:card][:name], difficulty: params[:card][:difficulty], list_id: params[:list_id], board_id: params[:board_id])
       redirect_to board_path(@board)
     else
       redirect_to boards_path
@@ -54,7 +54,7 @@ class CardsController < ApplicationController
   private
 
   def card_params
-    params.require(:card).permit(:name, :list_id, :board_id)
+    params.require(:card).permit(:name, :difficulty, :list_id, :board_id)
   end
 
 end
