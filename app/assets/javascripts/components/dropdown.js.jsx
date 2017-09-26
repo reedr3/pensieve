@@ -17,7 +17,7 @@ var Dropdown = React.createClass({
   render: function() {
     let menu;
     if(this.state.menuVisibility == "visible") {
-      menu = <div>
+      menu = <div className="menu-content">
                 <ul>
                   <li>
                     <a href={this.props.path + "/edit"} className="menu-item">Edit {this.props.menuNoun}</a>
