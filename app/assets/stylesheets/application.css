@@ -239,6 +239,16 @@ body {
   width: 50%;
   padding-left: 5px;
   margin-top: 10px;
+  cursor: pointer;
+}
+.list-name-edit {
+  display: inline-block;
+  font-size: 1.2em;
+  color: black;
+  width: 50%;
+  padding-left: 5px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .card a:link, .card a:visited, .card a:hover, .card a:active {
   color: black;

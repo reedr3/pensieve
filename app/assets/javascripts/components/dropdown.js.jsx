@@ -16,7 +16,7 @@ var Dropdown = React.createClass({
 
   render: function() {
     let menu;
-    if(this.state.menuVisibility == "visible") {
+    if(this.state.menuVisibility == "visible" && this.props.menuNoun != "List") {
       menu = <div className="menu-content">
                 <ul>
                   <li>
@@ -31,7 +31,21 @@ var Dropdown = React.createClass({
                   </li>
                 </ul>
               </div>
-    } else {
+    }
+    else if(this.state.menuVisibility == "visible" && this.props.menuNoun == "List") {
+      menu = <div className="menu-content">
+                <ul>
+                  <li>
+                    <form accept-charset="UTF-8" action={this.props.path} method="post">
+                      <input name="_method" type="hidden" value="delete" />
+                      <input name="authenticity_token" type="hidden" value={this.props.authenticityToken} />
+                      <input type="submit" className="menu-item" value={"Delete " + this.props.menuNoun} />
+                    </form>
+                  </li>
+                </ul>
+              </div>
+    }
+    else {
       menu = "";
     }
     return (
