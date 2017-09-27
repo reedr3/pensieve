@@ -21,7 +21,7 @@ var Card = React.createClass({
 
         <div className="card-sub-header">
           <p>{this.props.card.name}</p>
-          <Dropdown path={"/boards/" + this.props.board.id + "/lists/" + this.props.listId + "/cards/" + this.props.card.id} menuNoun="Card" showModalCallback={this.showModal} authenticityToken={this.props.authenticityToken}/>
+          <Dropdown path={"/boards/" + this.props.board.id + "/lists/" + this.props.listId + "/cards/" + this.props.card.id} menuNoun="Card" backgroundColor="#666" showModalCallback={this.showModal} authenticityToken={this.props.authenticityToken}/>
         </div>
 
         <p>{this.props.card.difficulty}</p>

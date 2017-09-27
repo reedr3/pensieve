@@ -1,6 +1,18 @@
 var List = React.createClass({
   getInitialState: function() {
-    return {listEdit: false};
+    return {listEdit: false, modalDisplay: {display: "none"}};
+  },
+
+  showModal: function() {
+    var newState = this.state;
+    newState.modalDisplay = {display: "block"};
+    this.setState(newState);
+  },
+
+  closeModal: function() {
+    var newState = this.state;
+    newState.modalDisplay = {display: "none"};
+    this.setState(newState);
   },
 
   onListNameClicked: function() {
@@ -46,7 +58,7 @@ var List = React.createClass({
 
         <div className="list-sub-header">
           {listName}
-          <Dropdown path={"/boards/" + this.props.board.id + "/lists/" + this.props.listId} menuNoun="List" authenticityToken={this.props.authenticityToken}/>
+          <Dropdown path={"/boards/" + this.props.board.id + "/lists/" + this.props.listId} menuNoun="List" backgroundColor="#999" authenticityToken={this.props.authenticityToken}/>
         </div>
 
         <div className="cards">
@@ -54,7 +66,16 @@ var List = React.createClass({
             return <Card board={this.props.board} listId={this.props.listId} card={card} authenticityToken={this.props.authenticityToken}/>
           }.bind(this))}
 
-          <div className="card"> <a href={"/boards/" + this.props.board.id + "/lists/" + this.props.listId + "/cards/new"}> <p> Create new card </p> </a> </div>
+          <div className="card card-create"> <div className="card-sub-header"> <LinkWithModal showModalCallback={this.showModal} linkWords="Create new card..." classes="card-create-link"/> </div> </div>
+
+          <CardCreateModal
+            modalDisplay={this.state.modalDisplay}
+            closeModalCallback={this.closeModal}
+            path={"/boards/" + this.props.board.id + "/lists/" + this.props.listId + "/cards/"}
+            authenticityToken={this.props.authenticityToken}
+            board={this.props.board}
+            listId={this.props.listId}
+          />
         </div>
 
       </div>
