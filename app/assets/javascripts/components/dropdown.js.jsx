@@ -3,6 +3,12 @@ var Dropdown = React.createClass({
     return {menuVisibility: "hidden"};
   },
 
+  onClickAway: function() {
+    var newState = this.state;
+    newState.menuVisibility = "hidden";
+    this.setState(newState);
+  },
+
   onMenuClicked: function() {
     var newState = this.state;
     if(this.state.menuVisibility == "hidden") {

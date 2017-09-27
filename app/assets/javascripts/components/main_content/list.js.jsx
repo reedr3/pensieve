@@ -9,6 +9,12 @@ var List = React.createClass({
     this.setState(newState);
   },
 
+  onClickAway: function() {
+    var newState = this.state;
+    newState.listEdit = false;
+    this.setState(newState);
+  },
+
   isInList: function(card) {
     return card.list_id == this.props.listId;
   },
@@ -27,7 +33,7 @@ var List = React.createClass({
           <input name="_method" type="hidden" value="put" />
           <input name="authenticity_token" type="hidden" value={this.props.authenticityToken} />
           <input name="board_id" type="hidden" value={this.props.board.id} />
-          <input name="name" type="text_field" defaultValue={this.props.listName}/>
+          <input name="name" type="text_field" defaultValue={this.props.listName} autoFocus={true} onBlur={this.onClickAway}/>
         </form>
       </div>
     }
