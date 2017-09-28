@@ -36,7 +36,7 @@ var Board = React.createClass({
 
         <div className="board-sub-header">
           <h1>{this.props.board.name}</h1>
-          <Dropdown path={"/boards/" + this.props.board.id} menuNoun="Board" backgroundColor="inherit" authenticityToken={this.props.authenticityToken}/>
+          <Dropdown path={"/boards/" + this.props.board.id} menuNoun="Board" backgroundColor="inherit" color="white" authenticityToken={this.props.authenticityToken}/>
         </div>
 
         <div className="lists">
