@@ -22,11 +22,9 @@ Follow the above link to the app on heroku. Make an account.
 You can view your boards and make new ones on your boards page.
 ![Pensieve Home](/public/pensieve_home.png?raw=true "Pensieve Home Page")
 
-You can view individual board details by clicking on them.
-![Pensieve Board](/public/pensieve_board.png?raw=true "Pensieve Board View")
-
 ### Lists
-You can add and manage lists on each of your boards.
+You can add and manage lists on each of your boards. Cards appear on each list sorted by difficulty.
+![Pensieve Board](/public/pensieve_board.png?raw=true "Pensieve Board View")
 
 ### Cards
 You can add cards to each list on your board. Cards can also be tagged with due dates, difficulty level, and more!
