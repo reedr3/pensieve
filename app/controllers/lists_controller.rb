@@ -8,7 +8,7 @@ class ListsController < ApplicationController
   def create
     @user = current_user
     @board = Board.find(params[:board_id])
-    @list = List.new(list_params)
+    @list = List.new(name: params[:name], board_id: params[:board_id])
     if @list.save
       redirect_to board_path(@board)
     else
@@ -29,7 +29,7 @@ class ListsController < ApplicationController
     @user = current_user
     @board = Board.find(params[:board_id])
     @list = List.find(params[:id])
-    if @list.update(name: params[:list][:name], board_id: params[:board_id])
+    if @list.update(name: params[:name], board_id: params[:board_id])
       redirect_to board_path(@board)
     else
       redirect_to boards_path
