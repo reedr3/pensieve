@@ -2,7 +2,7 @@
 
 ![Pensieve Logo](/public/pensieve_logo.png?raw=true "Pensieve Logo")
 
-Pensieve is a web app designed to aid and increase productivity by allowing users to efficiently compartmentalize and sort through tasks. This app is in the final stage of testing and development and will be live in a few days!
+Pensieve is a web app designed to aid and increase productivity by allowing users to efficiently compartmentalize and sort through tasks. Pensieve's format and design are based on the web app Trello and this project initially started out as building a Trello clone using Rails and React. This app is in the final stage of testing and development and will be live in a few days!
 
 ## The Stack
 - Ruby on Rails
