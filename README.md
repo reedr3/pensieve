@@ -1,6 +1,8 @@
 # Pensieve
 
-[Description of app.]
+![Pensieve Logo](/public/pensieve_logo.png?raw=true "Pensieve Logo")
+
+Pensieve is a web app designed to aid and increase productivity by allowing users to efficiently compartmentalize and sort through tasks. This app is in the final stage of testing and development and will be live in a few days!
 
 ## The Stack
 - Ruby on Rails
@@ -18,22 +20,17 @@ Follow the above link to the app on heroku. Make an account.
 
 ### Boards
 You can view your boards and make new ones on your boards page.
-[img of example boards page]
+![Pensieve Home](/public/pensieve_home.png?raw=true "Pensieve Home Page")
 
 You can view individual board details by clicking on them.
-[img of example board]
+![Pensieve Board](/public/pensieve_board.png?raw=true "Pensieve Board View")
 
 ### Lists
 You can add and manage lists on each of your boards.
-[img of list creation]
 
 ### Cards
-You can add cards to each list on your board.
-[img of cards on board]
-
-Cards can also be tagged with due dates, difficulty level, and more!
-[img of card creation with options]
+You can add cards to each list on your board. Cards can also be tagged with due dates, difficulty level, and more!
+![Pensieve Card Create](/public/pensieve_card_create.png?raw=true "Pensieve Card Creation")
 
 ### Search
 You can search your cards by keyword, tags, difficulty level, or due date.
-[image of search page with example results]
