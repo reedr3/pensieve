@@ -140,10 +140,10 @@ body {
 .board-in-index-view {
   background-color: #666;
   color: white;
-  width: 25%;
+  width: 22%;
   height: 150px;
   display: inline-block;
-  margin: 1%;
+  margin: 0.5%;
   border-radius: 10px;
 }
 .board-in-index-view p {
@@ -200,6 +200,7 @@ body {
   min-height: 470px;
 }
 .list {
+  /*white-space: normal;*/
   vertical-align: top;
   background-color: #999;
   width: 20%;
@@ -208,6 +209,7 @@ body {
   border-radius: 5px;
 }
 .list-sub-header {
+  /*white-space: normal;*/
   position: relative;
   background-color: #999;
   width: 100%;
@@ -215,6 +217,7 @@ body {
   margin-top: 5px;
 }
 .list-sub-header h1 {
+  /*white-space: normal;*/
   display: inline-block;
   font-size: 1.2em;
   color: black;
@@ -224,6 +227,7 @@ body {
   cursor: pointer;
 }
 .list-name-edit {
+  /*white-space: normal;*/
   display: inline-block;
   font-size: 1.2em;
   color: black;
@@ -233,6 +237,7 @@ body {
   cursor: pointer;
 }
 .card a:link, .card a:visited, .card a:hover, .card a:active {
+  /*white-space: normal;*/
   color: black;
   text-decoration: none;
 }
@@ -244,12 +249,13 @@ body {
 /*---------------------------------------------------------------------------------------------------------------*/
 /* Card Styling */
 .cards {
+  /*white-space: normal;*/
   margin: 0 auto;
 }
 .card {
-  margin: 0 auto;
+  margin: 10px auto;
   vertical-align: top;
-  background-color: #666;
+  background-color: white;
   width: 90%;
   display: block;
   border-radius: 5px;
@@ -261,6 +267,7 @@ body {
   margin-top: 5px;
 }
 .card-sub-header p {
+  white-space: normal;
   display: inline-block;
   font-size: 1em;
   color: black;
@@ -295,7 +302,6 @@ body {
   float: right;
   text-align: right;
   font-size: 1.5em;
-  color: white;
   width: 5%;
   padding-right: 20px;
   margin-top: 5px;
@@ -354,7 +360,8 @@ body {
 
 /* Modal Title */
 .modal-title {
-  margin: auto;
+  margin: 0px auto;
+  margin-top: 80px;
   display: block;
   width: 80%;
   max-width: 900px;
@@ -364,8 +371,21 @@ body {
   height: 20px;
 }
 
+.modal .card-create-form-container {
+  width: 35%;
+  height: 150px;
+  margin: 20px auto;
+  background-color: white;
+}
+
+.modal form input {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
 .modal label {
-  color: white;
+  color: black;
 }
 
 /* The Close Button */

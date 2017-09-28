@@ -88,7 +88,7 @@ var Dropdown = React.createClass({
     }
     return (
       <div className="menu" style={{backgroundColor: this.props.backgroundColor}}>
-        <a className="menu-icon" onClick = { this.onMenuClicked }>...</a>
+        <a className="menu-icon" onClick = { this.onMenuClicked } style={{color: this.props.color}}>...</a>
         {menu}
       </div>
     );

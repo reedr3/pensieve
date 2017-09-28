@@ -58,7 +58,7 @@ var List = React.createClass({
 
         <div className="list-sub-header">
           {listName}
-          <Dropdown path={"/boards/" + this.props.board.id + "/lists/" + this.props.listId} menuNoun="List" backgroundColor="#999" authenticityToken={this.props.authenticityToken}/>
+          <Dropdown path={"/boards/" + this.props.board.id + "/lists/" + this.props.listId} menuNoun="List" backgroundColor="#999" color="white" authenticityToken={this.props.authenticityToken}/>
         </div>
 
         <div className="cards">
